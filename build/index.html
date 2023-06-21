@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="sticky top-0 z-10 bg-teal-700 text-white">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">✈🚀Acme rocket</a>
+        </h1>
+        <div>
+          <button
+            id="mobile-open-btn"
+            class="text-3xl focus:outline-none sm:hidden"
+          >
+            ☰
+          </button>
+          <nav class="hidden space-x-8 text-xl sm:block" aria-label="main">
+            <a href="#rockets" class="hover:opacity-90"> Rocket </a>
+            <a href="#contact" class="hover:opacity-90"> Contact</a>
+            <a href="#about" class="hover:opacity-90">About</a>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main class="mx-auto max-w-4xl">
+      <section
+        id="hero"
+        class="b-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-4 px-6 sm:flex-row"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="sm:text:5xl max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left"
+          >
+            Lorem ipsum
+            <span class="text-indigo-700 dark:text-indigo-300"
+              >dolor sit amet</span
+            >
+            , consectetur adipisicing elit.
+          </h2>
+          <p
+            class="mt-4 max-w-md text-center text-slate-700 sm:text-left sm:text-slate-400"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+            nostrum iusto dolores odit quisquam, possimus magni consectetur
+          </p>
+        </article>
+        <img src="./img/rocketdab.png" alt="" class="sm:w-1/2" />
+      </section>
+      <hr class="mx-auto w-1/2 bg-black text-center dark:bg-white" />
+      <section id="rockets" class="mt-6 scroll-mt-20 p-6">
+        <h2 class="text-center text-4xl text-slate-900 dark:text-white">
+          Rocket
+        </h2>
+        <ul
+          class="flex list-none flex-col items-center gap-8 px-2 py-6 sm:flex-row"
+        >
+          <li
+            class="flex flex-col items-center rounded-2xl border border-solid border-slate-100 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img src="./img/rocketlaunch.png" alt="" class="w-1/2" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Lorem, ipsum dolor.
+            </h3>
+            <h2 class="text-2xl text-slate-400 dark:text-slate-400">
+              Lorem, ipsum.
+            </h2>
+          </li>
+
+          <li
+            class="flex flex-col items-center rounded-2xl border border-solid border-slate-100 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img src="./img/rocketman.png" alt="" class="w-1/2" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Lorem, ipsum dolor.
+            </h3>
+            <h2 class="text-2xl text-slate-400 dark:text-slate-400">
+              Lorem, ipsum.
+            </h2>
+          </li>
+          <li
+            class="flex flex-col items-center rounded-2xl border border-solid border-slate-100 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black"
+          >
+            <img src="./img/rocketride.png" alt="" class="w-1/2" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Lorem, ipsum dolor.
+            </h3>
+            <h2 class="text-2xl text-slate-400 dark:text-slate-400">
+              Lorem, ipsum.
+            </h2>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

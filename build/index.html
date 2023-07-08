@@ -12,7 +12,7 @@
         <h1 class="text-3xl font-medium">
           <a href="#hero">✈🚀Acme rocket</a>
         </h1>
-        <div>
+        <div class="flex gap-8">
           <button
             id="mobile-open-btn"
             class="text-3xl focus:outline-none sm:hidden"
@@ -24,9 +24,15 @@
             <a href="#contact" class="hover:opacity-90"> Contact</a>
             <a href="#about" class="hover:opacity-90">About</a>
           </nav>
+
+          <button id="theme-mode">
+            <span id="sun" class="visible">🔆</span
+            ><span id="moon" class="hidden">🌙</span>
+          </button>
         </div>
       </section>
     </header>
+
     <main class="mx-auto max-w-4xl">
       <section
         id="hero"
@@ -279,5 +285,27 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      let btn = document.querySelector("#theme-mode");
+      btn.addEventListener("click", () => {
+        let isDark = document.documentElement.classList.contains("dark");
+        let sun = document.querySelector("#sun");
+        let moon = document.querySelector("#moon");
+
+        if (isDark) {
+          sun.classList.add("hidden");
+          moon.classList.remove("hidden");
+          moon.classList.add("visible");
+
+          document.documentElement.classList.remove("dark");
+        } else {
+          moon.classList.add("hidden");
+          sun.classList.remove("hidden");
+          sun.classList.add("visible");
+          document.documentElement.classList.add("dark");
+        }
+      });
+    </script>
   </body>
 </html>
